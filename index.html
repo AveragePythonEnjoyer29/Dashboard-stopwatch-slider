@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="resources/css/style.css">
+    <script type="module" defer src="resources/js/main.js"></script>
+</head>
+<body>
+
+    <!-- widget 1-->
+    <article class="card card--controls">
+        <input type="range">
+    </article>
+
+    <!-- widget 2 -->
+    <article class="card card--image">
+
+    </article>
+
+    <!-- widget 3 -->
+    <article class="card card--stopwatch">
+        <div class="counter">
+            <span id="js--minutes">0</span>:<span id="js--seconds">0</span>
+        </div>
+        <section class="btn-wrapper">
+            <button class="btn btn--start" id="js--startButton">Start</button>
+            <button class="btn btn--stop" id="js--stopButton">Stop</button>
+            <button class="btn btn--reset" id="js--resetButton">Reset</button>
+        </section>
+    </article>
+</body>
+</html>
