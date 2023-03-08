@@ -5,16 +5,18 @@
     <link rel="stylesheet" href="resources/css/style.css">
     <script type="module" defer src="resources/js/main.js"></script>
 </head>
-<body>
+<body id="js--body">
 
     <!-- widget 1-->
     <article class="card card--controls">
-        <input type="range">
+        <h2 id="js--slider-text" class="slider-text">0</h2>
+        <input type="range" id="js--slider" class="slider" min="1" max="4" step="1">
     </article>
 
     <!-- widget 2 -->
     <article class="card card--image">
-
+        <img src="" alt="" id="js--imageView">
+        <button class="btn" id="js--displayButton">Display image</button>
     </article>
 
     <!-- widget 3 -->

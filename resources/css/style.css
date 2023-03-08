@@ -11,8 +11,8 @@ html {
 body {
     min-height: 100vh;
 
-    font-size: 2rem;
-    background: #BFACE2;
+    font-family: sans-serif;
+
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -20,6 +20,8 @@ body {
     /* align */
     justify-content: center;
     align-items: center;
+
+    background-image: radial-gradient(#c6bbdc, #bface2);
 }
 
 .card {
@@ -31,14 +33,20 @@ body {
     background: #655DBB;
     border-radius: 5rem;
     box-shadow: 0px 1rem 1rem 0px rgba(0, 0, 0, 0.2);
-}
 
-.card--stopwatch {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 4rem;
+}
+
+.card {
+    appearance: none;
+}
+
+.slider::-moz-range-thumb {
+    cursor: ew-resize;
 }
 
 .btn {
@@ -57,8 +65,4 @@ body {
 
 .btn--reset {
     color: purple;
-}
-
-.counter {
-    font-size: 4rem;
 }
